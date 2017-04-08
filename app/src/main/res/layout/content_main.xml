@@ -24,9 +24,5 @@
  app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="bengeos.com.dailynews.MainActivity"
 tools:showIn="@layout/app_bar_main">
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/my_recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbars="vertical" />
+
 -->
