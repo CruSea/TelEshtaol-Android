@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/feed_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/feed_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Feed Title"
+                android:layout_above="@+id/feed_content"
+                />
+
+            <TextView
+                android:id="@+id/feed_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_img"
+                android:padding="10dp"
+                android:text="Feed Content"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
