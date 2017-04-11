@@ -1,8 +1,10 @@
 package com.aset.teleshtaol;
 
+import android.support.v7.widget.RecyclerView;
+
 /**
- * Created by toshiba on 4/11/2017.
+ * Created by AmanS on 4/11/2017.
  */
 
-public class ListItemAdapter {
+public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.> {
 }
