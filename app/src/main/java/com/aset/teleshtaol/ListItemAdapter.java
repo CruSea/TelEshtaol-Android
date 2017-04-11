@@ -3,11 +3,11 @@ package com.aset.teleshtaol;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.PopupMenu;
+//import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+//import android.view.MenuInflater;
+//import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -45,7 +45,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
     public void onBindViewHolder(DataObjectHolder holder, int position) {
         holder.Title.setText(myItems.get(position).getTitle());
         holder.Content.setText(myItems.get(position).getContent());
-        holder.AlbumImage.setImageResource(myItems.get(position).getImageID());
+        holder.FeedImage.setImageResource(myItems.get(position).getImageID());
 //        Glide.with(myContext)
 //                .load(myItems.get(position).getImageURL())
 //                .into(holder.AlbumImage);
@@ -57,15 +57,15 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
     }
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-        private TextView Title, Content, PubDate;
-        private ImageView AlbumImage,Overflow;
+        private TextView Title, Content; //, PubDate;
+        private ImageView FeedImage; //,Overflow;
 
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             Title = (TextView) itemView.findViewById(R.id.feed_title);
             Content = (TextView) itemView.findViewById(R.id.feed_content);
-            AlbumImage = (ImageView) itemView.findViewById(R.id.feed_img);
+            FeedImage = (ImageView) itemView.findViewById(R.id.feed_img);
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
         }
