@@ -11,6 +11,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -67,14 +68,14 @@ public class MainActivity extends AppCompatActivity
         feed1.setContent("Content for our first ever feed");
         feedList.add(feed1);
 
-        feedList = new ArrayList<>();
+
         Feed feed2 = new Feed();
         feed2.setImageID(R.mipmap.ic_launcher);
         feed2.setTitle("Second Feed");
         feed2.setContent("Content for our second feed");
         feedList.add(feed2);
 
-        feedList = new ArrayList<>();
+
         Feed feed3 = new Feed();
         feed3.setImageID(R.mipmap.ic_launcher);
         feed3.setTitle("Third Feed");
@@ -83,10 +84,10 @@ public class MainActivity extends AppCompatActivity
 
         myAdapter = new ListItemAdapter(feedList,myContext);
         recyclerView = (RecyclerView) findViewById(R.id.feed_recycler_view);
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
         //recyclerView.addItemDecoration(new GridSpacingItemDecoration(3, dpToPx(1), true));
-        //recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(myAdapter);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SET_WALLPAPER) != PackageManager.PERMISSION_GRANTED) {
