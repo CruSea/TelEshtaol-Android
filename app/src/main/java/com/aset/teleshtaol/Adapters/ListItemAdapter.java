@@ -1,4 +1,4 @@
-package com.aset.teleshtaol;
+package com.aset.teleshtaol.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.aset.teleshtaol.DetailView;
+import com.aset.teleshtaol.Feed;
+import com.aset.teleshtaol.R;
 
 import java.util.Collections;
 import java.util.List;

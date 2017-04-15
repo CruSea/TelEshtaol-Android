@@ -1,8 +1,10 @@
-package com.aset.teleshtaol;
+package com.aset.teleshtaol.Splash;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.aset.teleshtaol.MainActivity;
 
 /**
  * Created by AmanS on 4/7/2017.
