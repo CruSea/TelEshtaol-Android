@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
 
         myAdapter = new ListItemAdapter(feedList,myContext);
         recyclerView = (RecyclerView) findViewById(R.id.feed_recycler_view);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, getWidthDP());
         recyclerView.setLayoutManager(mLayoutManager);
         //recyclerView.addItemDecoration(new GridSpacingItemDecoration(3, dpToPx(1), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());

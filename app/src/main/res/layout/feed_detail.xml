@@ -21,13 +21,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/feed_img"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:src="@mipmap/ic_launcher"
-                    android:scaleType="centerCrop"
-                    />
 
                 <TextView
                     android:id="@+id/feed_title"
@@ -38,7 +31,14 @@
                     android:padding="5dp"
                     android:textColor="#FFFFFF"
                     android:text="Feed Title"
+                    />
 
+                <ImageView
+                    android:id="@+id/feed_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
                     />
 
                 <TextView

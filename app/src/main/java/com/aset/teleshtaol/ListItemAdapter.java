@@ -28,7 +28,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
 
     public ListItemAdapter(List<Feed> myItems, Context myContext) {
         this.myItems = myItems;
-        if(myItems != null){
+        if (myItems != null) {
             Collections.reverse(myItems);
         }
         this.myContext = myContext;
@@ -57,8 +57,8 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
     }
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-        private TextView Title, Content; //, PubDate;
-        private ImageView FeedImage; //,Overflow;
+        private TextView Title, Content;
+        private ImageView FeedImage;
 
 
         public DataObjectHolder(View itemView) {
@@ -74,9 +74,9 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
         public void onClick(View v) {
             Intent intent = new Intent(myContext, DetailView.class);
             Bundle b = new Bundle();
-            b.putString("ImageID",String.valueOf(myItems.get(getAdapterPosition()).getImageID()));
-            b.putString("Title",String.valueOf(myItems.get(getAdapterPosition()).getTitle()));
-            b.putString("Content",String.valueOf(myItems.get(getAdapterPosition()).getContent()));
+            b.putString("ImageID", String.valueOf(myItems.get(getAdapterPosition()).getImageID()));
+            b.putString("Title", String.valueOf(myItems.get(getAdapterPosition()).getTitle()));
+            b.putString("Content", String.valueOf(myItems.get(getAdapterPosition()).getContent()));
             intent.putExtras(b);
             myContext.startActivity(intent);
         }
@@ -87,6 +87,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
             return true;
         }
     }
+}
    // private static void showPopupMenu(View view, final Feed feed) {
         // inflate menu
      //   PopupMenu popup = new PopupMenu(myContext, view);
@@ -99,7 +100,7 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
 
                // }
              //   return false;
-            }
+
         //});
         //popup.show();
     //}
