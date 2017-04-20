@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feed_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        android:padding="5dp"
+        card_view:cardCornerRadius="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/feed_video_img"/>
+
+            <ImageView
+                android:id="@+id/play_sign"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:l
+                android:src="@drawable/playSign"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/feed_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Video Feed Title"
+                android:layout_above="@+id/feed_video_content"
+                />
+
+            <TextView
+                android:id="@+id/feed_video_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feed_video_img"
+                android:padding="10dp"
+                android:text="Video Feed Content"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/feed_video_date"
+                android:layout_below="@id/feed_video_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="dd-mm-yy"
+                android:textSize="14sp"
+                android:layout_alignEnd="@+id/feed_video_content"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
