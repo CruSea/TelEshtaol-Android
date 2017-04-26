@@ -23,7 +23,7 @@
             <VideoView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:id="@+id/feed_video_img"
+                android:id="@+id/feed_video"
                 />
 
             <ImageView
@@ -52,7 +52,7 @@
                 android:id="@+id/feed_video_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/feed_video_img"
+                android:layout_below="@+id/feed_video"
                 android:padding="10dp"
                 android:text="Video Feed Content"
                 android:textSize="16sp" />
