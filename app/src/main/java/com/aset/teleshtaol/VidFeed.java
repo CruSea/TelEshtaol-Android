@@ -1,20 +1,20 @@
 package com.aset.teleshtaol;
 
 /**
-  Created by AmanS on 4/11/2017.
+ Created by AmanS on 4/26/2017.
  **/
-//Adapted from Album.java @ DailyEnjera
-public class Feed {
-    private int ImageID;
+
+public class VidFeed {
+    private int VideoID;
     private String Title,Content;
 
 
-    public int getImageID() {
-        return ImageID;
+    public int getVideoID() {
+        return VideoID;
     }
 
-    public void setImageID(int imageID) {
-        ImageID = imageID;
+    public void setVideoID(int vidID) {
+        VideoID = vidID;
     }
 
     public String getTitle() {
