@@ -5,8 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by AmanS on 4/8/2017.
- */
+  Created by AmanS on 4/8/2017.
+ **/
 
 public class DetailView extends AppCompatActivity {
 

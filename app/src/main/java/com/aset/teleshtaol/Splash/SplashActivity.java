@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.aset.teleshtaol.MainActivity;
 
 /**
- * Created by AmanS on 4/7/2017.
- */
+  Created by AmanS on 4/7/2017.
+ **/
 
 public class SplashActivity extends AppCompatActivity {
 

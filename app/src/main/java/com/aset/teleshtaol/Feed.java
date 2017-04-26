@@ -1,8 +1,8 @@
 package com.aset.teleshtaol;
 
 /**
- * Created by AmanS on 4/11/2017.
- */
+  Created by AmanS on 4/11/2017.
+ **/
 //Adapted from Album.java @ DailyEnjera
 public class Feed {
     private int ImageID;
