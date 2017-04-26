@@ -23,7 +23,8 @@
             <VideoView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:id="@+id/feed_video_img"/>
+                android:id="@+id/feed_video_img"
+                android:a/>
 
             <ImageView
                 android:id="@+id/play_sign"
