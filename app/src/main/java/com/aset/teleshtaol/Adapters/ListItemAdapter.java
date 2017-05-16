@@ -75,6 +75,11 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
         }
 
         @Override
+        public int getItemViewType (int position) {
+            MultipleRowModel multipleRowModel
+        }
+
+        @Override
         public void onClick(View v) {
             Intent intent = new Intent(myContext, DetailView.class);
             Bundle b = new Bundle();
