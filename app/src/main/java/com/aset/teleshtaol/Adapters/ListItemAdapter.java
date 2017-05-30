@@ -74,10 +74,10 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.DataOb
             itemView.setOnLongClickListener(this);
         }
 
-        @Override
-        public int getItemViewType (int position) {
-            MultipleRowModel multipleRowModel
-        }
+//        @Override
+//        public int getItemViewType (int position) {
+//            MultipleRowModel multipleRowModel
+//        }
 
         @Override
         public void onClick(View v) {
