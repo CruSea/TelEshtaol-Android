@@ -6,7 +6,7 @@ package com.aset.teleshtaol;
 
 public class VidFeed {
     private int VideoID;
-    private String Title,Content;
+    private String VidTitle,VidContent;
 
 
     public int getVideoID() {
@@ -17,19 +17,19 @@ public class VidFeed {
         VideoID = vidID;
     }
 
-    public String getTitle() {
-        return Title;
+    public String getVidTitle() {
+        return VidTitle;
     }
 
-    public void setTitle(String title) {
-        Title = title;
+    public void setVidTitle(String vidTitle) {
+        VidTitle = vidTitle;
     }
 
-    public String getContent() {
-        return Content;
+    public String getVidContent() {
+        return VidContent;
     }
 
-    public void setContent(String content) {
-        Content = content;
+    public void setVidContent(String vidContent) {
+        VidContent = vidContent;
     }
 }
